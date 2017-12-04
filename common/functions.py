@@ -44,6 +44,7 @@ def cross_entropy_error(y, t):
         y = y.reshape(1, y.size)
 
     # 教師データがone-hot-vectorの場合、正解ラベルのインデックスに変換
+    # 例) [60000,10]の配列(10は0,0,0,0,0,1,0,0,0,0)なら、[60000]に変換
     if t.size == y.size:
         t = t.argmax(axis=1)
 
