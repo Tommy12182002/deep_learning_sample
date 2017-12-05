@@ -28,4 +28,4 @@ print(img.shape)
 img = img.reshape(28, 28)
 print(img.shape)
 
-show_image(img)
+# show_image(img)
